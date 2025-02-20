@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como surgiu o mascote do Android?</title>
+    <style>
+        html, body {
+            height: 100%; /* Garante que o body ocupe toda a altura da tela */
+            margin: 0; /* Remove a margem padrão */
+            display: flex;
+            flex-direction: column;
+            background-color: beige; 
+            overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+        }
+        header {
+            background-color: green;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Alinha os itens em coluna */
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+            width: 100%;
+            height: 150px; /* Altura fixa para o cabeçalho */
+        }
+        header > h1 {
+            padding: 25px;
+            color: white;
+            text-align: center;
+            margin: 0; /* Remove a margem padrão */
+        }
+        header > p {
+            color: white;
+            text-align: center;
+            margin: 0; /* Remove a margem padrão */
+            padding: 15px;
+        }
+        header > .links {
+            margin-top: auto; /* Empurra os links para o fundo do cabeçalho */
+            display: flex; /* Usar flexbox para alinhar os links */
+            justify-content: flex-start; /* Alinha os links à esquerda */
+            width: 100%; /* Largura total do cabeçalho */
+        }
+        header > .links > a {
+            margin-right: 14px;
+            text-decoration: none;
+            color: white;
+        }
+        header > .links > a:hover {
+            color: aqua;
+        }
+        main {
+            flex: 1; /* Faz o main ocupar o espaço restante */
+            padding: 20px 0; /* Espaçamento vertical */
+            display: flex; /* Adiciona flex para o container */
+            justify-content: center; /* Centraliza o container horizontalmente */
+        }
+        .container {
+            background-color: white; /* Fundo branco para o container */
+            width: 80%; /* Largura de 80% */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        div > h1 {
+            color: darkgreen;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 0; /* Remove a margem esquerda */
+        }
+
+        div > p {
+            text-align: justify;
+            text-indent: 15px;
+        }
+        .container > h2 {
+            background: linear-gradient(to right, rgb(116, 190, 116), white);
+            color: rgb(31, 97, 0);
+        }
+        .image-container {
+            display: flex; /* Usar flexbox para alinhar as imagens lado a lado */
+           flex-wrap: nowrap; /* Impede que as imagens se movam para a linha seguinte */
+            margin: 20px 0; /* Espaçamento acima e abaixo do contêiner de imagens */
+        }
+        div > img {
+            height: 300px; /* Altura fixa para as imagens */
+            width: auto; /* Largura automática para manter a proporção */
+            margin-right: 80px; /* Espaçamento entre as imagens */
+
+        }
+        div > p > a {
+            background-color: rgb(63, 231, 63);
+            color: darkgreen;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        div > p > a:hover {
+            color: azure;
+        }
+        .imggrande{
+            width: 100%;
+            display: flex;
+        }
+        .imgcentro{
+            display: block;
+           margin: auto;
+        }
+        .container > .maissobre > h2 {
+            background-color: rgb(0, 71, 0);
+            color: white;
+            text-indent: 9px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px ;
+        }
+        .container > .maissobre > article {
+            background-color: rgb(21, 189, 21);
+            padding: 5px;
+            
+        }
+        .container > .maissobre > article > .continuação {
+            display: flex;
+            padding: 5px;
+        }
+        .container > .maissobre > aside {
+            padding: 10px;
+        }
+        footer{
+            background-color: darkgreen;
+            padding: 5px;
+        }
+        footer > p {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%; /* Largura maior em telas menores */
+            }
+            .image-container {
+                flex-direction: column; /* Imagens em coluna em telas menores */
+                align-items: center; /* Centraliza as imagens */
+            }
+            div > img {
+                margin-right: 0; /* Remove margem entre imagens */
+                margin-bottom: 20px; /* Espaçamento entre imagens */
+            }
+            header > .links {
+                flex-direction: column; /* Links em coluna em telas menores */
+                align-items: center; /* Centraliza os links */
+            }
+            header > .links > a {
+                margin-bottom: 10px; /* Espaçamento entre links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curiosidades da tecnologia</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo tech. Tudo em um único lugar.</p>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale conosco</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>História do mascote do Android</h1>
+            <p class="espaço">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="#" target="_blank">Aspernatur</a> a atque quod illo eius molestias nesciunt vitae voluptatum voluptatem repellendus optio porro possimus ad dolores quia, enim, dignissimos exercitationem nisi?</p>
+            <h2>A primeira Versão</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="#" target="_blank">Nesciunt</a>, modi laudantium asperiores quaerat nulla unde iusto nisi quae dolore? Mollitia ipsum ut iure ullam voluptatum amet itaque nemo eveniet cumque!</p>
+            <div class="image-container">
+                <img src="fotofinal.jpeg" alt="Imagem 1">
+                <img src="fotofinal.jpeg" alt="Imagem 2">
+                <img src="fotofinal.jpeg" alt="Imagem 3">
+            </div>
+            <aside>Essa foto foi tirada há muito tempo</aside>
+            <h2>Surge um novo mascote</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate magni, voluptate vero quidem, possimus mollitia unde exercitationem eum deleniti modi consequatur sequi, laboriosam aliquam? Autem molestiae maxime voluptate ipsam laborum?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus iusto accusantium maiores ipsum, consequatur vel doloribus inventore! Corrupti optio iste vero, error recusandae in minima, officiis, et est delectus esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus iusto accusantium maiores ipsum, consequatur vel doloribus inventore! Corrupti optio iste vero, error recusandae in minima, officiis, et est delectus esse.</p>
+            <img class = "imggrande"src="fotofinal.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <a href="#">Repellendus</a>, delectus? Aliquid dicta, sit aspernatur eos enim tempore sed id porro, fugit debitis provident nostrum, deserunt temporibus? Iusto praesentium reiciendis qui?</p>
+            <img class="imgcentro" src="fotofinal.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio, ullam animi dicta earum accusantium voluptates sed? At maiores in modi, voluptatem sint veritatis eligendi, facere, magni possimus molestiae vitae.[</p>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/YB9c1Zg_Ln4?si=hd0iey53hlpiGe6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class = "maissobre">
+                <h2>Quer aprender mais?</h2>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente nisi aperiam labore quaerat reiciendis quasi, non aspernatur facere alias tempora corporis cupiditate voluptas amet numquam vitae atque sint placeat?
+                    <a class = "continuação" href="#">link 1</a>
+                    <a class = "continuação" href="#">link 2</a>
+                    <a class = "continuação" href="#">link 3</a>
+                    <a class = "continuação" href="#">Link 4</a>
+                    <a class = "continuação" href="#">Link 5</a>
+                    <a class = "continuação" href="#">Link 6</a>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi beatae nisi, magni esse non reiciendis nihil, at minima corrupti quas tenetur? Minus dolore natus molestias reprehenderit asperiores repellat qui esse.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor amet accusantium ducimus! <a href="#">Alias sequi</a> ad tempore, nostrum nisi harum qui cum blanditiis in itaque odio suscipit aperiam aliquid distinctio!
+                </article>
+                <aside>É isso, espero que você tenha gostado!</aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Thiago Mota</p>
+    </footer>
+</body>
+</html>

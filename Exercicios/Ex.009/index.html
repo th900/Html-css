@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Abra o site em vários dispositivos
+    </p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagnes/pequena.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagnes/media.png" type="image/png">
+        <img src="Imagnes/grande.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Agora vamos colocar aúdio no site</h1>
+    <audio controls >
+        <source src="Mood Ring - National Sweetheart.mp3" type="audio.mpeg">
+       <!--- 
+        <source src="Mood Ring - National Sweetheart.mp3" type="audio.ogg"> Preciso de dois arquivos .ogg e .wav
+        <source src="Mood Ring - National Sweetheart.mp3" type="audio.wav"> -->
+
+    </audio>
+</body>
+</html>
