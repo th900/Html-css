@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0;
+    color: #333;
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header > nav {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    gap: 20px; /* Espaçamento entre os links */
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+}
+header > nav > a:hover{
+    text-decoration: underline;
+}
+#search {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column; /* Organiza os sabores verticalmente */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+    margin: 10px 0; /* Margem vertical para espaçamento */
+    padding: 15px;
+    width: 100%; /* Largura total para evitar rolagem horizontal */
+    max-width: 400px; /* Largura máxima para manter a estética */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #ff9800;
+}
+
+footer {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

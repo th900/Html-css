@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Delícia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Delícia</h1>
+        <input type="text" id="search" placeholder="Pesquise um sabor...">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo à Pizzaria Delícia!</h2>
+        <p>A melhor pizza da cidade, feita com ingredientes frescos e muito amor.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Nosso Cardápio</h2>
+        <div class="cardapio">
+            <div class="item">
+                <img src="pizza1.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>Uma deliciosa combinação de molho de tomate, queijo mozzarella e manjericão fresco.</p>
+                <label for="size-margherita">Escolha o tamanho:</label>
+                <select id="size-margherita">
+                    <option value="30">Pequena - R$ 30,00</option>
+                    <option value="40">Média - R$ 40,00</option>
+                    <option value="50">Grande - R$ 50,00</option>
+                    <option value="60">Maracanã - R$ 60,00</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <img src="pizza2.jpg" alt="Pizza Pepperoni">
+                <h3>Pizza Pepperoni</h3>
+                <p>Clássica pizza americana com fatias de pepperoni e queijo derretido.</p>
+                <label for="size-pepperoni">Escolha o tamanho:</label>
+                <select id="size-pepperoni">
+                    <option value="35">Pequena - R$ 35,00</option>
+                    <option value="45">Média - R$ 45,00</option>
+                    <option value="55">Grande - R$ 55,00</option>
+                    <option value="65">Maracanã - R$ 65,00</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <img src="pizza3.jpg" alt="Pizza Quatro Queijos">
+                <h3>Pizza Quatro Queijos</h3>
+                <p>Uma mistura irresistível de queijos: mozzarella, gorgonzola, parmesão e provolone.</p>
+                <label for="size-quatro-queijos">Escolha o tamanho:</label>
+                <select id="size-quatro-queijos">
+                    <option value="40">Pequena - R$ 40,00</option>
+                    <option value="50">Média - R$ 50,00</option>
+                    <option value="60">Grande - R$ 60,00</option>
+                    <option value="70">Maracanã - R$ 70,00</option>
+                </selec
+            </div>
+
+            <div class="item">
+                <img src="pizza4.jpg" alt="Pizza Vegetariana">
+                <h3>Pizza Vegetariana</h3>
+                <p>Repleta de legumes frescos, como pimentões, cebolas e azeitonas.</p>
+                <label for="size-vegetariana">Escolha o tamanho:</label>
+                <select id="size-vegetariana">
+                    <option value="32">Pequena - R$ 32,00</option>
+                    <option value="42">Média - R$ 42,00</option>
+                    <option value="52">Grande - R$ 52,00</option>
+                    <option value="62">Maracanã - R$ 62,00</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <img src="pizza5.jpg" alt="Pizza Frango com Catupiry">
+                <h3>Pizza Frango com Catupiry</h3>
+                <p>Frango desfiado com catupiry e azeitonas, uma combinação deliciosa.</p>
+                <label for="size-frango-catupiry">Escolha o tamanho:</label>
+                <select id="size-frango-catupiry">
+                    <option value="38">Pequena - R$ 38,00</option>
+                    <option value="48">Média - R$ 48,00</option>
+                    <option value="58">Grande - R$ 58,00</option>
+                    <option value="68">Maracanã - R$ 68,00</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <img src="pizza6.jpg" alt="Pizza Portuguesa">
+                <h3>Pizza Portuguesa</h3>
+                <p>Uma combinação de presunto, ovos, cebola e azeitonas, perfeita para os amantes de sabores tradicionais.</p>
+                <label for="size-portuguesa">Escolha o tamanho:</label>
+                <select id="size-portuguesa">
+                    <option value="36">Pequena - R$ 36,00</option>
+                    <option value="46">Média - R$ 46,00</option>
+                    <option value="56">Grande - R$ 56,00</option>
+                    <option value="66">Maracanã - R$ 66,00</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: <a href="mailto:contato@pizzariadelicia.com.br">contato@pizzariadelicia.com.br</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para filtrar pizzas com base na pesquisa
+        document.getElementById('search').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const items = document.querySelectorAll('.item');
+
+            items.forEach(item => {
+                const title = item.querySelector('h3').innerText.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
