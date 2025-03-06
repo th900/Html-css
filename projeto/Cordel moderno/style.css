@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    padding: 20px;
+    
+}
+header > h1 {
+    font-family: "Passion one";
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+header > p {
+    font-family: "Passion one";
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+    text-align: center;
+}
+header > p > a  {
+    text-decoration: none;
+    color: white;
+    font-family: "Passion one";
+    font-size: 20px;
+    
+}
+main {
+    background-color: white;
+    
+}
+
+main > section > p {
+    color: rgb(0, 0, 0);
+    font-family: "sriracha";
+    padding: 10px; 
+    margin-top: 40px; 
+    font-size: 25px;
+    line-height: 55px;
+    margin-left: 20px;
+    font-style: italic;
+}
+#Estrofe2 {
+    background-image: url("imagens/background001.jpg");
+    background-size: 100% 85%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    min-height: 100vh;
+}
+
+#Estrofe2 > p {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.233));
+    width: 20%;
+    color: white;
+    font-family: "sriracha";
+    font-style: italic;
+    position: absolute;
+    top: 850px;
+}
+#Estrofe3 {
+    background-color: white;
+}
+#Estrofe3 > p {
+    color: black;
+    font-family:" sriracha";
+    font-style: italic;
+    font-weight: bold;
+}
+#Estrofe4 { 
+    background-image: url(imagens/background002.jpg);
+    background-size: 100% 85%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    min-height: 100vh;
+
+}
+#Estrofe4 > p {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.233));
+    width: 20%;
+    color: white;
+    font-family: "sriracha";
+    font-style: italic;
+    position: absolute;
+    top: 2600px;
+    box-shadow: black;
+}
+#Estrofe5 {
+    background-color: white;
+}
+#Estrofe5 > p {
+    color: black;
+    font-family:" sriracha";
+    font-style: italic;
+    font-weight: bold;
+}
+footer{
+    background-color: black;
+    color:rgb(128, 128, 128);
+    font-family: "Passion one";
+    text-align: center;
+    padding:5px ;
+}
+footer > p > span {
+    color: white;
+}

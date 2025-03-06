@@ -77,10 +77,7 @@ section {
     font-weight: bold;
     color: #ff9800;
 }
-section > img {
-    height: 20px;
-    width: 20px;
-}
+
 
 footer {
     background-color: #ff9800;
