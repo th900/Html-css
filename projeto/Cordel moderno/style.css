@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body{
     margin: 0;
 }
@@ -13,12 +14,14 @@ header > h1 {
     font-size: 60px;
     color: white;
     text-align: center;
+    font-variant: small-caps;
 }
 header > p {
     font-family: "Passion one";
     font-size: 20px;
     color: rgb(128, 128, 128);
     text-align: center;
+    padding-bottom: 50px;
 }
 header > p > a  {
     text-decoration: none;
@@ -29,6 +32,7 @@ header > p > a  {
 }
 main {
     background-color: white;
+    
     
 }
 
@@ -44,9 +48,9 @@ main > section > p {
 }
 #Estrofe2 {
     background-image: url("imagens/background001.jpg");
-    background-size: 100% 85%; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center; 
     width: 100%; 
     min-height: 100vh;
 }
@@ -71,8 +75,8 @@ main > section > p {
 }
 #Estrofe4 { 
     background-image: url(imagens/background002.jpg);
-    background-size: 100% 85%; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center; 
     width: 100%; 
     min-height: 100vh;
@@ -86,7 +90,7 @@ main > section > p {
     font-style: italic;
     position: absolute;
     top: 2600px;
-    box-shadow: black;
+    text-shadow: 1px 1px 0px black;
 }
 #Estrofe5 {
     background-color: white;
